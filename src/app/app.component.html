@@ -2,14 +2,14 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      </div>
+    </div>
     <div class="col">
       <div class="row">
         <div style="text-align:center">
           <h1>
             Welcome to {{ title }}!
           </h1>
-          <img width="300" alt="Angular Logo" src="assets/ArosaPhoto.jpg">
+          <img width="300" alt="Photo of Joseph atop a mountain in Arosa, Switzerland" src="assets/ArosaPhoto.jpg">
         </div>
       </div>
     </div>
@@ -18,16 +18,24 @@
     </div>
 
   </div>
-  <div class="col"></div>
-  <div class="col">
-    <mat-tab-group>
-      <mat-tab label="Projects">
-        <app-accordion></app-accordion>
-      </mat-tab>
-      <mat-tab label="About Me"> <app-home></app-home> </mat-tab>
-      <mat-tab label="Third"> Content 3 </mat-tab>
-    </mat-tab-group>
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+      <mat-tab-group>
+        <mat-tab label="Projects" style="text-align:center">
+          <app-accordion></app-accordion>
+        </mat-tab>
+        <mat-tab label="About Me" style="text-align:center">
+          <app-home></app-home>
+        </mat-tab>
+        <mat-tab label="Resume" style="text-align:center">
+          <app-resume></app-resume>
+        </mat-tab>
+        <mat-tab label="Contact Info" style="text-align:center">
+          <app-contact-info></app-contact-info>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+    <div class="col"></div>
   </div>
-  <div class="col"></div>
-
 </div>
