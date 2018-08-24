@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Joseph DiBiasi\'s Portfolio';
+  hideContentAboutMe = false;
+
+  showAboutMe() {
+  if (this.hideContentAboutMe === false) {
+    this.hideContentAboutMe = true;
+  } else {
+    this.hideContentAboutMe = false;
+  }
+  }
 }
